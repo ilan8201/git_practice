@@ -36,3 +36,5 @@ const verbs = ["very nice",
 	"so creative"
 ];
 createSentense();
+
+Test B
