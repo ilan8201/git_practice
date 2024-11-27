@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Personal Portfolio</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<link rel="createSentense.js">
-<header>
-    <nav>
-        <a href="https://ilan8201.github.io/git_practice/"><img src="Assets/Logo.png" alt="Logo"></a>
-    </nav>
-</header>
-<body>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Ilan Aizenshtat, a Fullstack Developer based in Sderot.">
+    <meta name="author" content="Ilan Aizenshtat">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Assets/logo.ico">
+</head>
+
+<body class="loading">
+    <header>
+        <div class="logo">
+            <img src="Assets/Logo.png" alt="logo" id="logo" usemap="#logo-image-map">
+            <map name="logo-image-map">
+                <area target="_self" alt="Logo area" title="Click to move to home page" href="index.html#"
+                    coords="262,319,251,291,252,208,238,207,241,186,238,172,233,171,233,127,232,116,224,109,223,95,211,84,202,81,192,75,184,72,172,68,162,65,150,64,140,62,131,64,121,61,116,65,109,68,103,71,97,81,94,87,92,95,87,101,89,107,88,116,90,125,89,136,89,150,90,164,90,172,83,172,81,178,81,185,81,193,83,201,85,206,72,206,68,212,68,219,68,227,71,285,65,295,61,306,57,319"
+                    shape="poly">
+            </map>
+        </div>
+        <nav>
+            <a href="#" id="about" data-div="about-box">&lt;about&gt;</a>
+            <a href="#" id="services" data-div="services-box">&lt;services&gt;</a>
+            <a href="#" id="portfolio" data-div="portfolio-box">&lt;portfolio&gt;</a>
+            <a href="#" id="contact" data-div="contact-me-box">&lt;contact-me&gt;</a>
+        </nav>
+    </header>
+
+    <div class="content-container">
+        <div class="intro-section">
+            <p class="greeting">HI THERE 👋 I'M</p>
+            <h1 class="name">Ilan <br>Aizenshtat</h1>
+            <h2 class="title">FULLSTACK DEVELOPER 💻</h2>
+            <p class="description">
+                I'm a junior Fullstack developer based in Sderot.
+            </p>
+            <button type="button" class="hire-me-btn">Hire Me</button>
+        </div>
+        <div class="dynamic-container">
+            <div class="about-box active">
+                <p>1</p>
+            </div>
+            <div class="services-box">
+                <p>2</p>
+            </div>
+            <div class="portfolio-box">
+                <p>3</p>
+            </div>
+            <div class="contact-me-box">
+                <p>4</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="createSentense.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

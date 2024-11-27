@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "CascadiaCode";
+    src: url(Assets/CascadiaCode.ttf) format("truetype");
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: "CascadiaCode";
+}
+
+body {
+    background-color: rgb(44, 54, 64);
+}
+
+/* Header and Navigation */
+header {
+    height: 170px;
+    padding-bottom: 10px;
+    background-image: url(Assets/01.svg);
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Navigation Links and Hover States */
+#about {
+    color: rgb(172, 113, 75);
+}
+
+#about:hover {
+    color: rgb(200, 135, 100);
+    text-shadow: rgba(200, 135, 100, 0.9) 0px 0px 10px;
+}
+
+#services {
+    color: rgb(143, 114, 156);
+}
+
+#services:hover {
+    color: rgb(170, 136, 190);
+    text-shadow: rgba(170, 136, 190, 0.9) 0px 0px 10px;
+}
+
+#portfolio {
+    color: rgb(175, 149, 87);
+}
+
+#portfolio:hover {
+    color: rgb(210, 180, 120);
+    text-shadow: rgba(210, 180, 120, 0.9) 0px 0px 10px;
+}
+
+#contact {
+    color: rgb(122, 129, 132);
+}
+
+#contact:hover {
+    color: rgb(140, 212, 253);
+    text-shadow: rgba(140, 212, 253, 0.9) 0px 0px 10px;
+}
+
+/* Logo */
+#logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 320px;
+    transition: width 2s, height 2s;
+    pointer-events: visiblePainted;
+}
+
+.loading #logo {
+    position: fixed;
+    height: 100vh;
+    width: 100vh;
+    transition: all 2s;
+}
+
+/* Intro Section */
+.intro-section {
+    text-align: left;
+    color: #ffffff;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.greeting {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.name {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(146, 149, 108);
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+/* Buttons */
+.hire-me-btn {
+    background-color: rgb(146, 149, 108);
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hire-me-btn:hover {
+    background-color: #00cc77;
+}
+
+/* Dynamic Containers */
+.dynamic-container>div {
+    display: none;
+}
+
+.dynamic-container>div.active {
+    display: block;
+}
+
